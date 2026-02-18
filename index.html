@@ -1883,7 +1883,7 @@
         <li><a href="#program">Program</a></li>
         <li><a href="#practical">Practical</a></li>
         <li><a href="#partners">Partners</a></li>
-        <li><a href="#GOOGLE_FORM_LINK" class="nav__cta" target="_blank" rel="noopener noreferrer">Participate Now</a></li>
+        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSffrbZNFqH1toqSMQIkrCa_bG_DAz_s1oMSiU31omjGm3dXSA/viewform?usp=publish-editor" class="nav__cta" target="_blank" rel="noopener noreferrer">Participate Now</a></li>
       </ul>
     </div>
   </nav>
@@ -1899,7 +1899,7 @@
       <p class="hero__subtitle">IMNEA 2026 — Sustainability, Resilience, and Restoration</p>
       <p class="hero__location">📍 Grand Lecture Hall – Higher National School of Forests, Khenchela</p>
       <div class="hero__actions">
-        <a href="#GOOGLE_FORM_LINK" class="btn btn--primary" target="_blank" rel="noopener noreferrer">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSffrbZNFqH1toqSMQIkrCa_bG_DAz_s1oMSiU31omjGm3dXSA/viewform?usp=publish-editor" class="btn btn--primary" target="_blank" rel="noopener noreferrer">
           Participate Now <span aria-hidden="true">→</span>
         </a>
         <a href="#about" class="btn btn--outline">Learn More</a>
@@ -2153,7 +2153,7 @@
     <div class="container">
       <h2 id="registration-heading" class="section__title">Registration</h2>
       <p class="registration__text">Join researchers, students, and professionals for IMNEA 2026. Register now to participate in this national seminar on integrated management of natural ecosystems.</p>
-      <a href="#GOOGLE_FORM_LINK" class="btn btn--large" target="_blank" rel="noopener noreferrer">👉 Participate in IMNEA 2026</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSffrbZNFqH1toqSMQIkrCa_bG_DAz_s1oMSiU31omjGm3dXSA/viewform?usp=publish-editor" class="btn btn--large" target="_blank" rel="noopener noreferrer">👉 Participate in IMNEA 2026</a>
       <p class="registration__note">Registration redirects to Google Form</p>
     </div>
   </section>
@@ -2242,7 +2242,7 @@
       document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
         anchor.addEventListener('click', function(e) {
           const href = this.getAttribute('href');
-          if (href === '#' || href === '#GOOGLE_FORM_LINK') return;
+          if (href === '#' || href.startsWith('http')) return;
           const target = document.querySelector(href);
           if (target) {
             e.preventDefault();
