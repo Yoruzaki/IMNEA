@@ -2334,15 +2334,6 @@
         observer.observe(section);
       });
 
-      // Add parallax effect to hero background
-      window.addEventListener('scroll', function() {
-        const scrolled = window.pageYOffset;
-        const hero = document.querySelector('.hero');
-        if (hero && scrolled < window.innerHeight) {
-          hero.style.transform = `translateY(${scrolled * 0.5}px)`;
-        }
-      }, { passive: true });
-
       // Scroll to top button
       const scrollToTopBtn = document.getElementById('scrollToTop');
       if (scrollToTopBtn) {
