@@ -819,18 +819,31 @@
       padding: var(--space-3xl) 0;
       background: linear-gradient(135deg, var(--color-white) 0%, var(--color-gray-50) 100%);
       box-shadow: var(--shadow-sm);
+      overflow-x: hidden;
+    }
+
+    .dates .container {
+      width: 100%;
+      max-width: var(--container-max);
+      margin: 0 auto;
+      padding: 0 var(--space-lg);
+      box-sizing: border-box;
+    }
+
+    @media (min-width: 768px) {
+      .dates .container {
+        padding: 0 var(--space-xl);
+      }
     }
 
     .dates__grid {
       display: grid;
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: var(--space-xl);
-    }
-
-    @media (min-width: 640px) {
-      .dates__grid {
-        grid-template-columns: repeat(3, 1fr);
-      }
+      width: 100%;
+      box-sizing: border-box;
+      align-items: stretch;
+      justify-items: stretch;
     }
 
     .date-card {
@@ -842,6 +855,14 @@
       transition: all var(--duration-normal) var(--ease-out);
       position: relative;
       overflow: hidden;
+      width: 100%;
+      max-width: 100%;
+      min-width: 0;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
 
     .date-card::before {
